@@ -1,0 +1,24 @@
+{
+  "name": "js-video",
+  "version": "1.0.0",
+  "description": "video player?",
+  "main": "index.js",
+  "scripts": {
+    "start": "live server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merRen22/js-video.git"
+  },
+  "keywords": [],
+  "author": "Renato Mercado Luna <renatomercadoluna@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merRen22/js-video/issues"
+  },
+  "homepage": "https://github.com/merRen22/js-video#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
