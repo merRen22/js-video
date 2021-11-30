@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype Inheritance</title>
+  </head>
+  <body>
+    <a href="/notes/">Go back</a>
+    <p><em>Open ur console pls 👨‍💻 F12</em></p>
+
+    <p>
+      Almost everything in JavaScript is an object. In fact, only six things are
+      not objects. They are — null , undefined , strings, numbers, boolean, and
+      symbols. These are called primitive values or primitive types. So as we do
+      not have classes instead of inheritance with classes we have prototype
+      inheritance
+    </p>
+    <script>
+      // we can take this even farther and beyond to where no one has ever go ⚡⚡⚡🌌🚀
+      function Person5(name) {
+        // when we use new there is not need to add this line 👇
+        //const person = Object.create(personMethods);
+        // now when we use new everything in prototype its instantiated in this
+        this.name = name;
+      }
+
+      Person5.prototype.wave = function () {
+        console.log(`Hi I am ${this.name} 👋`);
+      };
+
+      // new is basically sugar syntax but anyways it is really helpful
+      const random69420 = new Person5('Chad Thundercock');
+      random69420.wave();
+
+      /**
+       * Disclaimer
+       * Nowadays everyone uses the keyword class wich is a sugar version of the last method
+       */
+    </script>
+  </body>
+</html>
