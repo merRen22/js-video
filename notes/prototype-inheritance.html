@@ -38,6 +38,31 @@
        * Disclaimer
        * Nowadays everyone uses the keyword class wich is a sugar version of the last method
        */
+
+      // hasOwnProperty this checks wheater the set property its included inside the object and not as an inherited one
+      console.log(
+        "random69420.hasOwnProperty('name') ",
+        random69420.hasOwnProperty('name')
+      );
+      console.log(
+        "random69420.hasOwnProperty('toString') ",
+        random69420.hasOwnProperty('toString')
+      );
+      console.log(
+        "random69420.hasOwnProperty('wave') ",
+        random69420.hasOwnProperty('wave')
+      );
+
+      // when we call a property of an object in js we search for that property in the prototype chain wich its all the parents of the given obj until we find it if not undefined its retuerned
+      // a simple object in Js has as parent the prototype object and as parent of that one the Object call Object which has basic functions such as toString()
+
+      /**
+       * myObj -> prototype -> Object
+       *
+       * inside myObj is where out params live
+       * inside prototype is where our functions live
+       * inside Object is where generic functions live
+       */
     </script>
   </body>
 </html>
