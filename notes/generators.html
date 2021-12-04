@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Generators</title>
+  </head>
+
+  <body>
+    <a href="/notes/">Go back</a>
+    <p><em>Open ur console pls 👨‍💻 F12</em></p>
+
+    <script>
+      // The generators are functions that can be stopped at any time of the execution and resume
+      // Its context will be saved every time its stopped and resume
+      // Every time we call next the generator will continue its execution unitl it finds another yield.
+      function* simpleGenerator() {
+        console.log('GENERATOR START');
+        yield 1;
+        yield 2;
+        yield 3;
+        console.log('GENERATOR END');
+      }
+
+      // const gen = simpleGenerator();
+
+      // Infinite generator
+      function* idMaker() {
+        let id = 1;
+        while (true) {
+          yield id;
+          id = id + 1;
+        }
+      }
+
+      // We can also send values when we call next
+      function* idMakerWithReset() {
+        let id = 1;
+        let reset;
+        while (true) {
+          reset = yield id;
+          if (reset) {
+            id = 1;
+          } else {
+            id = id + 1;
+          }
+        }
+      }
+
+      // Fibonacci sequence
+      function* fibonacci() {
+        let a = 1;
+        let b = 1;
+        while (true) {
+          const nextNumber = a + b;
+          a = b;
+          b = nextNumber;
+          yield nextNumber;
+        }
+      }
+    </script>
+  </body>
+</html>
