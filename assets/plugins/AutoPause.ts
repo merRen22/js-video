@@ -1,3 +1,5 @@
+import MediaPlayer from "../MediaPlayer";
+
 /**
  * Intersection Observer
  * The Intersection Observer API provides a way to asynchronously observe changes in the intersection
@@ -11,6 +13,9 @@
  * analytics data).
  */
 class AutoPause {
+  private threshold: number;
+  player: MediaPlayer;
+
   constructor() {
     this.threshold = 0.25;
     this.handleIntersection = this.handleIntersection.bind(this);
@@ -29,7 +34,7 @@ class AutoPause {
     document.addEventListener('visibilitychange', this.handleVisibilitychange);
   }
 
-  handleVisibilitychange() {
+  private handleVisibilitychange() {
     const isVisible = document.visibilityState === 'visible';
     if (isVisible) {
       this.player.play();
@@ -38,7 +43,7 @@ class AutoPause {
     }
   }
 
-  handleIntersection(entries) {
+  private handleIntersection(entries: IntersectionObserverEntry[]) {
     const entry = entries[0];
 
     const isVisible = entry.intersectionRatio >= this.threshold;
