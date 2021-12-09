@@ -1,28 +1,24 @@
 {
-  "name": "js-video-player",
+  "name": "@mer_ren22/jsmediaplayer",
   "version": "1.0.0",
-  "description": "video player with ads in js",
-  "main": "index.js",
+  "description": "JS media player",
+  "main": "lib/MediaPlayer.js",
   "scripts": {
-    "start": "parcel index.html notes/index.html notes/**/*.html",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/merRen22/js-video.git"
-  },
-  "keywords": [],
+  "keywords": [
+    "javascript",
+    "node",
+    "ads",
+    "package",
+    "npm",
+    "Media player",
+    "plugins"
+  ],
   "author": "Renato Mercado Luna <renatomercadoluna@hotmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/merRen22/js-video/issues"
-  },
-  "homepage": "https://github.com/merRen22/js-video#readme",
+  "license": "MIT",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
     "typescript": "^4.5.2"
-  },
-  "browserslist": [
-    "last 1 Chrome version"
-  ]
+  }
 }
