@@ -1,7 +1,7 @@
 {
-  "name": "js-video",
+  "name": "js-video-player",
   "version": "1.0.0",
-  "description": "video player?",
+  "description": "video player with ads in js",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html notes/index.html notes/**/*.html",
