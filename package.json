@@ -1,6 +1,6 @@
 {
   "name": "@mer_ren22/jsmediaplayer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS media player",
   "main": "lib/MediaPlayer.js",
   "scripts": {
@@ -20,5 +20,16 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.5.2"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merRen22/js-video.git"
+  },
+  "bugs": {
+    "url": "https://github.com/merRen22/js-video/issues"
+  },
+  "homepage": "https://github.com/merRen22/js-video#readme"
 }
